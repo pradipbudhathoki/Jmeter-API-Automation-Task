@@ -1,4 +1,4 @@
-# JMeter API AUtomation Test Plan
+# JMeter API Automation Test Plan
 
 This repository contains a JMeter test plan designed to perform the following tasks:
 
@@ -61,3 +61,5 @@ This repository contains a JMeter test plan designed to perform the following ta
    ```
 
 2. Open the index.html file in the output report directory to view the detailed HTML report
+
+**Note** : The file API_automation.groovy contains the corresponding groovy scripts for the pre and post processors

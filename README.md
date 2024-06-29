@@ -16,25 +16,6 @@ This repository contains a JMeter test plan designed to perform the following ta
 - Java
 - Groovy
 
-## Test Plan Structure
-
-1. **Thread Group**
-   - **HTTP Request**: GET Request
-     - **HTTP Header Manager**
-     - **Response Assertion**
-     - **View Results in Tree**
-     - **View Results in Table**
-     - **BeanShell PostProcessor**: Save GET response
-   - **JSR223 Sampler**: Modify JSON File
-   - **HTTP Request**: POST Request
-     - **HTTP Header Manager**
-     - **JSR223 PreProcessor**: Set modified JSON as the request body
-     - **Response Assertion**
-     - **View Results in Tree**
-     - **View Results in Table**
-     - **JSON Extractor**: Extract entire response
-     - **JSR223 Assertion**: Additional validation and logging
-
 ## Instructions
 
 ### Setup
@@ -61,5 +42,24 @@ This repository contains a JMeter test plan designed to perform the following ta
    ```
 
 2. Open the index.html file in the output report directory to view the detailed HTML report
+
+## Test Plan Structure
+
+1. **Thread Group**
+   - **HTTP Request**: GET Request
+     - **HTTP Header Manager**
+     - **Response Assertion**
+     - **View Results in Tree**
+     - **View Results in Table**
+     - **BeanShell PostProcessor**: Save GET response
+   - **JSR223 Sampler**: Modify JSON File
+   - **HTTP Request**: POST Request
+     - **HTTP Header Manager**
+     - **JSR223 PreProcessor**: Set modified JSON as the request body
+     - **Response Assertion**
+     - **View Results in Tree**
+     - **View Results in Table**
+     - **JSON Extractor**: Extract entire response
+     - **JSR223 Assertion**: Additional validation and logging
 
 **Note** : The file API_automation.groovy contains the corresponding groovy scripts for the pre and post processors
